@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class HighLow {
+  public static void main(String[] args) {
+    Scanner keyboard = new Scanner(System.in);
+    int secret, guess;
+    String hiLo;
+
+    secret = 1 + (int)(100*Math.random());
+
+    System.out.println("I'm thinking of a number between 1-100.");
+    System.out.println("Try to guess it!");
+    System.out.print("> ");
+    guess = keyboard.nextInt();
+
+    while (guess != secret) {
+      if (guess < secret) {
+        hiLo = "low";
+      }
+      else {
+        hiLo = "high";
+      }
+      System.out.print("Sorry, your guess is too " + hiLo + ".");
+      System.out.print("Try again. \n");
+      guess = keyboard.nextInt();
+
+    }
+
+    System.out.println("You guessed it! What are the odds?!?!");
+  }
+}
