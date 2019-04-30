@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class GenderTitles {
   public static void main(String[] args) {
     Scanner keyboard = new Scanner(System.in);
-    String title;
+    String title = "error";
 
     System.out.print("First name: ");
     String first = keyboard.next();
