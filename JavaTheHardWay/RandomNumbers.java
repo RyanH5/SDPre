@@ -55,5 +55,15 @@ public class RandomNumbers {
     System.out.println( "0-9.99:\t" + r );
     System.out.println( "0-9:\t" + (int)r );
     System.out.println( "1-10:\t" + (1 + (int)r) );
+
+    a = 1 + (int)( 3*Math.random() );
+    b = 1 + (int)(3*Math.random() );
+    c = 1 + (int)(3*Math.random() );
+    System.out.println("1-3: \t" + a + "\t" + b + "\t" + c);
+
+    a = 5 + (int)( 5*Math.random() );
+    b = 5 + (int)(5*Math.random() );
+    c = 5 + (int)(5*Math.random() );
+    System.out.println("1-3: \t" + a + "\t" + b + "\t" + c);
   }
 }
